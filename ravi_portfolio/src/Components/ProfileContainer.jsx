@@ -5,12 +5,9 @@ import {FaNodeJs,FaReact} from 'react-icons/fa'
 import {AiOutlineMail,AiOutlineMobile,AiFillHtml5} from "react-icons/ai"
 import {TbBrandJavascript} from 'react-icons/tb'
 import {GrLocation} from 'react-icons/gr'
-// import About from './About';
 const ProfileContainer = () => {
 
-
   return (
-
     <div className='HeaderArea'>
         <Flex flexDirection='column' width='60%' align='center' padding={20}>
         <Box> 

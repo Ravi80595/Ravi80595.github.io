@@ -3,6 +3,8 @@ import Navbar from './Components/Navbar';
 import ProfileContainer from './Components/ProfileContainer';
 import About from './Components/About';
 import Projects from './Components/Projects';
+import Contact from './Pages/Contact';
+import SlidingRow from './Utils/SlidingRow';
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
      <Navbar/>
      <ProfileContainer/>
      <About/>
+     <SlidingRow/>
      <Projects/>
+     <Contact/>
     </div>
   );
 }
