@@ -1,4 +1,4 @@
-import { Box,Flex,Heading,Button,Image } from '@chakra-ui/react'
+import { Box,Flex,Heading,Button,Image,Link } from '@chakra-ui/react'
 import React from 'react'
 import '../App.css'
 import {FaNodeJs,FaHandPointRight} from 'react-icons/fa'
@@ -7,14 +7,14 @@ import {IoLogoCss3} from 'react-icons/io'
 import {BsGithub} from 'react-icons/bs'
 import {VscLinkExternal} from 'react-icons/vsc'
 
-const Projects = ({Name,TechStack,line1,line2,line3}) => {
+const Projects = ({Name,TechStack,line1,line2,line3,codeUrl}) => {
   return (
     <Box className='Project_box'>
-      <Flex gap='125px' textAlign='center'>
-        <Box>
-          <Image src='https://static.vecteezy.com/system/resources/previews/003/795/478/original/cartoon-man-working-free-vector.jpg' alt='Ravi Sharma' width={300}></Image>
+          <Box width={300} height={200} border='2px solid black' margin='25px'></Box>
+      <Flex gap='auto' textAlign='center' className='Flex_box'>
+        <Box width={['xs', 'md', 'lg', '4xl']}>
           <Heading as='h3'>Tech Stack</Heading>
-          <Flex margin='0px 0px 20px 40px'>
+          <Flex margin='20px'>
             <Box className='techStackBox'><AiFillHtml5/></Box>
             <Box className='techStackBox'><IoLogoCss3/></Box>
             <Box className='techStackBox'><FaNodeJs/></Box>
@@ -22,16 +22,17 @@ const Projects = ({Name,TechStack,line1,line2,line3}) => {
           </Flex>
         </Box>
         <Box className='project_desc_box'>
-        <Box>
-          <Heading as='h1'>{Name}</Heading>
-          <Box textAlign='left' fontSize='20px'>
+        <Box >
+          <Heading marginBottom='-0px' as='h1'>{Name}</Heading>
+          <Box className='descBox'>
             <p><FaHandPointRight/>{line1}</p>
             <p><FaHandPointRight/>{line2}</p>
             <p><FaHandPointRight/>{line3}</p>
           </Box>
           <Box>
             <Button style={{margin:'15px',borderRadius:'6px',fontSize:'16px', width:'130px'}} className='Resume_btn'><VscLinkExternal/> Live</Button>
-            <Button style={{margin:'15px',borderRadius:'6px',fontSize:'16px', width:'130px'}} className='Resume_btn'><BsGithub/> View Code</Button>
+            <a href={codeUrl} target='blank'> 
+            <Button style={{margin:'15px',borderRadius:'6px',fontSize:'16px', width:'130px'}} className='Resume_btn'><BsGithub/> View Code</Button></a>
           </Box>
           </Box>
         </Box>

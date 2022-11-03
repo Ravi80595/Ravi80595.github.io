@@ -1,5 +1,6 @@
 import React from 'react'
-import {Box,Flex,Container,Text,Spacer,Heading} from '@chakra-ui/react'
+import {Box,Flex,Container,Text,Spacer,Heading,Button} from '@chakra-ui/react'
+import ThemeButton from '../Utils/ThemeButton'
 
 const Navbar = () => {
 
@@ -34,15 +35,17 @@ const Navbar = () => {
   return (
     <>
     <Box className='Navbar_box'>
-        <Flex gap={60} width='50%' margin='auto'>
+      <Box display='flex'>
+         <Flex gap={60}  margin='auto auto auto auto'>
           <Heading as='h3' className='Link_btns' onClick={scrollToHome}>Home</Heading>
           <Heading as='h3' className='Link_btns' onClick={scrollToAbout}>About</Heading>
           <Heading as='h3' className='Link_btns'>Skills</Heading>
           <Heading as='h3' className='Link_btns' onClick={scrollToProjects}>Projects</Heading>
           <Heading as='h3' className='Link_btns' onClick={scrollToContact}>Contact</Heading>
-        </Flex>
+          </Flex>
+          <ThemeButton/>
+        </Box>
     </Box>
-    
     </>
 
 

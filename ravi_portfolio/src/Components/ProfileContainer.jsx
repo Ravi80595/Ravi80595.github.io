@@ -12,8 +12,8 @@ const ProfileContainer = () => {
         <Flex flexDirection='column' width='60%' align='center' padding={20}>
         <Box> 
          <Text className='Hello_Style'>Hello I'm</Text> 
-        <Heading fontSize={40} margin={-5}>Ravi Sharma</Heading>
-        <Heading as='h3' size='lg'>Full Stack Developer</Heading>
+        <Heading as='h1' size={['lg', 'md', 'lg', '4xl']} margin={-5}>Ravi Sharma</Heading>
+        <Heading as='h3' size={['sm', 'md', 'lg', 'xl']} >Full Stack Developer</Heading>
         </Box>
         <Box> 
         <HStack padding={10}><AiOutlineMail/><Text>rv.sharma@gmail.com</Text></HStack>
@@ -30,7 +30,7 @@ const ProfileContainer = () => {
         </Flex>
       
         <Box>
-          <Image src='https://avatars.githubusercontent.com/u/63177572?v=4' alt='Ravi Sharma' className='photo_image' />
+          <Image src='https://avatars.githubusercontent.com/u/63177572?v=4' alt='Ravi Sharma' className='photo_image' size={['sm', 'md', 'lg', '4xl']}/>
         </Box>
         
       </div>

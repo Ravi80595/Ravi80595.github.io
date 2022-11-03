@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useState } from 'react';
 import { ArrowUpIcon,ArrowDownIcon } from '@chakra-ui/icons';
 import { Box, Button } from '@chakra-ui/react';
 
@@ -41,14 +41,14 @@ export default function ScrollToTop() {
           position='fixed'
           bottom='20px'
           left={['6px', '20px']}
-          zIndex={3}>
+          zIndex={3}
+          fontSize={['sm', 'md', 'lg', 'xl']}
+          >
+          
           <Button className='ArrowStyle'
-            size={'sm'}
             rightIcon={<ArrowDownIcon />}
-            colorScheme='whatsapp'
             variant='solid'>
           </Button>
-          
         </Box>
       )}
       { (

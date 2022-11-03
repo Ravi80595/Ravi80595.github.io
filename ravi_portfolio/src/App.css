@@ -4,6 +4,7 @@
   position: fixed;
   width: 100%;
   z-index: 200;
+  display: inline;
 }
 .Link_btns{
   cursor: pointer;
@@ -26,8 +27,9 @@
 
 .HeaderArea{
   display: flex;
-  gap: 50px;
+  gap: 80px;
   margin-top: 0px;
+  padding: 20px;
   padding-top: 90px;
   background-image: linear-gradient(to right 
   ,white,#edfefe,white,#edfefe,white);
@@ -37,7 +39,7 @@
   border-radius: 50%;
   height: 300px;
   margin-top: 50px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 .About_image{
   height: 300px;
@@ -79,7 +81,6 @@
 .Project_box{
   width: 70%;
   background-color: white;
-  /* background-image: linear-gradient(to right ,white,#edfefe,white,#edfefe,white); */
   border: 2px solid aqua;
   margin: 20px auto 20px auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -90,17 +91,40 @@
   /* padding: 5px; */
   font-size: 40px;
   margin: 0px 5px 10px 0px;
-  width: 55px;
+  width:70%;
 }
 .project_desc_box{
+  margin-top: -250px;
+  width: 60%;
+  margin-left: auto;
+}
+.descBox{
   /* border: 2px solid black; */
-  justify-content: space-around;
-  padding: 10px;
+  padding: 20px;
+  height: auto;
+  /* width: 30%; */
+  font-size: 20px;
+  text-align: left;
+  margin-top: -20px;
 }
 .ArrowStyle{
   font-size: 43px;
   border-radius: 50%;
-  background-color: aquamarine;
+  background-color:#0076ff;
   color: white;
   border: 1px solid aqua;
+}
+/* #4fbe79 */
+/* #0076ff */
+@media only screen and (max-width: 600px) {
+.About_image{
+  display: none;
+}
+.Flex_box{
+  flex-direction: column;
+}
+.project_desc_box{
+margin-top: 0px;
+width: auto;
+}
 }
