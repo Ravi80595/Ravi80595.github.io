@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <Box height='400px' border='2px solid black'>
     
-    rav
+    ravs
     </Box>
   )
 }
