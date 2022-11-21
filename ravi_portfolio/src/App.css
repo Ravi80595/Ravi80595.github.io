@@ -1,3 +1,7 @@
+.App{
+  background-image: linear-gradient(to right ,white,#edfefe,white,#edfefe,white);
+}
+
 .Navbar_box{
   background-image: linear-gradient(to right,rgb(249, 227, 227),white,rgb(243, 218, 218));
   height: 60px;
@@ -5,6 +9,12 @@
   width: 100%;
   z-index: 200;
   display: inline;
+}
+.navbar_line{
+  height: 5px;
+  background-color: red;
+  width: 0;
+  transition: 1ms;
 }
 .Link_btns{
   cursor: pointer;
@@ -20,11 +30,6 @@
   transition: width .3s;
   background: #000;
 }
-
-.Link_btns:hover::after{
-  width: 100%;
-}
-
 .HeaderArea{
   display: flex;
   gap: 80px;
@@ -34,18 +39,27 @@
   background-image: linear-gradient(to right 
   ,white,#edfefe,white,#edfefe,white);
 }
+.icons{
+  font-size: 60px;
+}
 .photo_image{
   border: 2px solid black;
   border-radius: 50%;
   height: 300px;
   margin-top: 50px;
-  /* margin-left: 10px; */
 }
 .About_image{
   height: 300px;
   margin-top: 50px;
   margin-left: 90px;
   padding-top: 20px;
+}
+.About_box{
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  margin-top: 0px;
+  font-size: 20px;
 }
 .Hello_Style{
   background-color: blue;
@@ -58,8 +72,153 @@
 }
 .About_style{
   background-image: linear-gradient(to right ,white,#edfefe,white,#edfefe,white);
-  margin-top: -20px;
+  font-family: sans-serif;
+  line-height: 5px;
+  line-height: 34px;
 }
+.skills_box{
+  display: grid;
+  grid-template-columns: repeat(3,2fr);
+  background-image: linear-gradient(to right ,white,#edfefe,white,#edfefe,white);
+  gap: 20px;
+  width: 75%;
+  margin: auto;
+  margin-top: 50px;
+}
+.skills_box div{
+  height: 120px;
+  width: 90%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
+  padding-top: 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+.skillBoxName{
+  padding-bottom: 0px;
+  margin-top: 70px;
+}
+.box{
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  z-index: 9;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  text-align: center;
+  background-color: white;
+  position: relative;
+}
+.box:hover{
+  transform: scale(0.9)
+}
+
+
+
+
+/* ********************** CSS AFTER DARK THEME *************** */
+
+.App-dark{
+  background: linear-gradient(180deg, rgba(30,53,58) 16%, rgba(18,18,18) 54%,
+  rgba(29,36,38) 99%);
+}
+.About_style-dark{
+  background: linear-gradient(180deg, rgba(30,53,58) 16%, rgba(18,18,18) 54%,
+   rgba(29,36,38) 99%);
+  color: white;
+}
+.HeaderArea-dark{
+  background: linear-gradient(180deg, rgba(1,0,7) 16%, rgba(0,0,0,1) 54%,
+   rgba(30,53,58) 99%);
+  display: flex;
+  gap: 80px;
+  margin-top: 0px;
+  padding: 20px;
+  padding-top: 90px;
+  color: white;
+}
+.Navbar_box-dark{
+  background: linear-gradient(180deg, rgba(2,1,13) 16%, rgba(0,0,0,1) 54%, rgb(0, 0, 0) 99%);
+  color: white;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+  display: inline;
+}
+.Link_btns-dark{
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: inline-block;
+  /* color: blue; */
+}
+.Link_btns-dark::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  /* transition:1s; */
+  transition: width .3s;
+  background: rgb(250, 250, 250);
+}
+.Link_btns-dark:hover::after{
+  width: 100%;
+}
+.skills_box-dark{
+  display: grid;
+  grid-template-columns: repeat(3,2fr);
+  gap: 20px;
+  width: 75%;
+  margin: auto;
+  margin-top: 50px;
+}
+.skills_box-dark div{
+  height: 120px;
+  width: 90%;
+  box-shadow: rgba(255, 252, 252, 0.24) 0px 3px 8px;
+  text-align: center;
+  padding-top: 15px;
+  background: linear-gradient(180deg, rgba(2,0,36,1) 16%, rgba(0,0,0,1) 54%, rgb(0, 0, 0) 99%);
+  border-radius: 10px;
+  color: white;
+}
+.skillBoxName-dark{
+  padding-bottom: 0px;
+  margin-top: 70px;
+  color: white;
+}
+.box-dark{
+  color: white;
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  z-index: 9;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  text-align: center;
+  position: relative;
+}
+.box:hover{
+  transform: scale(0.9)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************************************* */
 
 .Skills_btn{
   background-color: white;
@@ -75,38 +234,70 @@
   color:white;
   background-color: blue;
   border:2px solid blue;
+  cursor: pointer;
   font-size:15px
 }
+.Resume_btn:hover{
+  transform: scale(1.1)
+}
 
-.Project_box{
+/* .Project_box{
   width: 70%;
   background-color: white;
   border: 2px solid aqua;
   margin: 20px auto 20px auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.techStackBox{
+} */
+/* .techStackBox{
   border: 2px solid aqua;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  /* padding: 5px; */
   font-size: 40px;
   margin: 0px 5px 10px 0px;
   width:70%;
-}
-.project_desc_box{
+} */
+/* .project_desc_box{
   margin-top: -250px;
   width: 60%;
   margin-left: auto;
 }
 .descBox{
-  /* border: 2px solid black; */
   padding: 20px;
   height: auto;
-  /* width: 30%; */
   font-size: 20px;
   text-align: left;
   margin-top: -20px;
+} */
+/* .project_image{
+  width: 300px;
+  height: 200px;
+} */
+/* .project_image:hover{
+  transform: scale(1.1);
+} */
+
+
+.npmhover:hover{
+  box-shadow: rgb(0 0 0 / 5%) 0px 1px 2px, rgb(224 17 17 / 8%) 0px 2px 4px, rgb(235 16 16 / 83%) 0px 4px 8px, rgb(234 27 25 / 70%) 0px 8px 16px, rgb(242 15 15 / 0%) 0px 16px 32px, rgb(255 6 6 / -45%) 0px 32px 64px;
 }
+.javascripthover:hover{
+  box-shadow: rgb(0 0 0 / 5%) 0px 1px 2px, rgb(224 17 17 / 8%) 0px 2px 4px, rgba(199, 239, 18, 0.83) 0px 4px 8px, rgba(207, 245, 13, 0.7) 0px 8px 16px, rgb(242 15 15 / 0%) 0px 16px 32px, rgb(255 6 6 / -45%) 0px 32px 64px;
+}
+.csshover:hover{
+  box-shadow: rgb(0 0 0 / 5%) 0px 1px 2px, rgb(224 17 17 / 8%) 0px 2px 4px, rgba(18, 55, 239, 0.83) 0px 4px 8px, rgba(39, 36, 237, 0.7) 0px 8px 16px, rgb(242 15 15 / 0%) 0px 16px 32px, rgb(255 6 6 / -45%) 0px 32px 64px; 
+}
+.reacthover:hover{
+  box-shadow: rgb(0 0 0 / 5%) 0px 1px 2px, rgb(224 17 17 / 8%) 0px 2px 4px, rgba(23, 192, 234, 0.83) 0px 4px 8px, rgba(37, 194, 247, 0.7) 0px 8px 16px, rgb(242 15 15 / 0%) 0px 16px 32px, rgb(255 6 6 / -45%) 0px 32px 64px; 
+}
+.reduxhover:hover{
+  box-shadow: rgb(0 0 0 / 5%) 0px 1px 2px, rgb(224 17 17 / 8%) 0px 2px 4px, rgba(109, 12, 237, 0.83) 0px 4px 8px, rgba(153, 18, 237, 0.7) 0px 8px 16px, rgb(242 15 15 / 0%) 0px 16px 32px, rgb(255 6 6 / -45%) 0px 32px 64px;  
+}
+.nodehover:hover{
+  box-shadow: rgb(0 0 0 / 5%) 0px 1px 2px, rgb(224 17 17 / 8%) 0px 2px 4px, rgba(12, 237, 50, 0.83) 0px 4px 8px, rgba(22, 237, 18, 0.7) 0px 8px 16px, rgb(242 15 15 / 0%) 0px 16px 32px, rgb(255 6 6 / -45%) 0px 32px 64px;
+}
+.githubhover:hover{
+  box-shadow: rgb(0 0 0 / 5%) 0px 1px 2px, rgb(224 17 17 / 8%) 0px 2px 4px, rgba(0, 0, 0, 0.83) 0px 4px 8px, rgba(13, 13, 13, 0.7) 0px 8px 16px, rgb(242 15 15 / 0%) 0px 16px 32px, rgb(255 6 6 / -45%) 0px 32px 64px;
+}
+
 .ArrowStyle{
   font-size: 43px;
   border-radius: 50%;
@@ -114,11 +305,70 @@
   color: white;
   border: 1px solid aqua;
 }
+.boxa{
+  display: flex;
+  gap: 84px;
+  width: 88%;
+  margin: auto;
+  margin-left: 145px;
+  margin-top: 0px;
+  position: absolute;
+}
+
+
+.box2{
+  height: 310px;
+  background: linear-gradient(180deg, rgba(1,3,4) 16%, rgba(0,0,0,1) 54%, 
+    rgb(62,68,70) 99%);
+  margin-top: 140px;
+  padding-top: 110px;
+}
+.box2a{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: 80px;
+  /* border: 2px solid red; */
+}
+.box2aInput{
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.lastBox{
+  width: 30%;
+  margin: auto;
+  color: white;
+  margin-top: -20px;
+}
+
+
+
+
 /* #4fbe79 */
 /* #0076ff */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
 .About_image{
   display: none;
+}
+.icons{
+  margin-top: 10px;
+  width: 50%;
+}
+.HeaderArea{
+  gap: 28px;
+}
+.About_box{
+  width: 80%;
+}
+.About_style{
+  width: 135vw;
+  margin: auto;
+}
+.project_image{
+  width: 80%;
+  margin: auto;
+  height: 180px;
 }
 .Flex_box{
   flex-direction: column;
@@ -127,4 +377,22 @@
 margin-top: 0px;
 width: auto;
 }
+.Project_box{
+  width: 130vw;
+  margin: auto;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+.skills_box{
+  width: 135vw;
+  margin-left: 10%;
+}
+}
+
+@media only screen and ( min-width:641px) {
+.project_image{
+  width: 210px;
+  height: 190px;
+}
+
 }

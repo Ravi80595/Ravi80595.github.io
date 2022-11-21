@@ -1,13 +1,16 @@
 import React from 'react'
-import { useState } from 'react';
 import styled from "styled-components";
+import { useContext } from 'react';
+import { AppContext } from '../Context/ThemeContext';
 
 const ThemeButton = () => {
-    const [theme,setTheme]=useState("false")
+    const {toogleTheme}=useContext(AppContext)
+
+
   return (
     <div style={{marginTop:'15px',marginRight:'15px'}}>
       <CheckBoxWrapper>
-        <CheckBox id="checkbox" type="checkbox" />
+        <CheckBox id="checkbox" type="checkbox" onChange={toogleTheme} />
         <CheckBoxLabel htmlFor="checkbox" />
       </CheckBoxWrapper>
     </div>

@@ -1,9 +1,10 @@
-// import React, { useEffect, useState } from 'react';
+ import React, { useEffect, useState } from 'react';
 import { ArrowUpIcon,ArrowDownIcon } from '@chakra-ui/icons';
 import { Box, Button } from '@chakra-ui/react';
 
 export default function ScrollToTop() {
-//   const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const [bottom,setBottom]=useState(false)
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -19,23 +20,27 @@ export default function ScrollToTop() {
     });
   };
 
-//   useEffect(() => {
-//     const toggleVisibility = () => {
-//       if (window.pageYOffset > 1400) {
-//         setIsVisible(true);
-//       } else {
-//         setIsVisible(false);
-//       }
-//     };
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.pageYOffset > 1400) {
+        setIsVisible(true);
+      } else if(window.pageYOffset < 1000){
+        setBottom(true)
+      }else{
+        setIsVisible(false);
+        setBottom(false)
+      }
+    };
 
-//     window.addEventListener('scroll', toggleVisibility);
+    window.addEventListener('scroll', toggleVisibility);
 
-//     return () => window.removeEventListener('scroll', toggleVisibility);
-//   }, []);
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, []);
 
   return (
     <>
-      { (
+      { bottom &&
+      (
         <Box
           onClick={scrollToBottom}
           position='fixed'
@@ -51,7 +56,8 @@ export default function ScrollToTop() {
           </Button>
         </Box>
       )}
-      { (
+      { isVisible && 
+      (
             <Box onClick={scrollToTop}
             position='fixed'
             top='70px'

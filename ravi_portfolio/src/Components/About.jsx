@@ -1,34 +1,29 @@
 import React from 'react'
 import '../App.css' 
-import {Box,Flex,Heading,Image,Text,Button,Wrap, Container} from '@chakra-ui/react'
-import {HiDownload} from 'react-icons/hi'
+import {Box,Heading,Text} from '@chakra-ui/react'
+import { useContext } from 'react'
+import { AppContext } from '../Context/ThemeContext'
 
 const About = () => {
+  const {darkTheme}=useContext(AppContext)
+
   return (
-    <Box className='About_style'>
-      <Flex gap='auto'> 
+    <Box className={darkTheme?"About_style":"About_style-dark"}> 
+        <Box className='About_box'>
+        <Heading as='h1' width='25%' borderBottom='4px solid black'>About Me</Heading>
         <Box>
-          <Image src='https://static.vecteezy.com/system/resources/previews/003/795/478/original/cartoon-man-working-free-vector.jpg' alt='Ravi Sharma' className='About_image' boxSize={['xs', 'md', 'lg', '4xl']}/>
-        </Box>
-        <Box width='50%' margin='auto' padding='20px' marginTop='0px'>
-        <Heading as='h1' textAlign='center'>About Me</Heading>
-        <Text padding='20px'>
-            An enthusiastic Full Stack Developer. Capable of writing production-ready code using ReactJS, Redux, and CSS on the front-end, NodeJS, and Express on the backend to build single-page applications. Passionate about coding and strongly interested in working in a product-based company.
+        <Text>
+        Hello! My name is Ravi Sharma & I enjoy creating things that live on the internet. I'm a passionate Developer, with strong administrative & communication skills, good attention to details & the ability to write efficient code.
         </Text>
-        <Wrap>
-        <Button className='Skills_btn'>HTML:5</Button>
-        <Button className='Skills_btn'>CSS</Button>
-        <Button className='Skills_btn'>JAVASCRIPT</Button>
-        <Button className='Skills_btn'>REACT</Button>
-        <Button className='Skills_btn'>NodeJS</Button>
-        <Button className='Skills_btn'>BOOTSTRAP</Button>
-        <Button className='Skills_btn'>REACT</Button>
-        </Wrap>
-        <Box>
-        <Button className='Resume_btn'>Resume <HiDownload style={{marginLeft:'10px'}} /></Button>
+        <Text>
+        My field of interest are building new Web Technologies and Products and also in areas related to Deep Learning and Natural Launguage Processing.
+        </Text>
+        <Text>
+        I have clear, logical mind with a practical approach to problem-solving and a drive to see things through to completion. I have work experience in multiple project and clone project with team collaboration.
+        </Text>
         </Box>
         </Box>
-      </Flex>
+      
     </Box>
   )
 }
