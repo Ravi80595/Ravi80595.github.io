@@ -3,24 +3,41 @@ import {Box,Flex,Heading} from '@chakra-ui/react'
 import ThemeButton from '../Utils/ThemeButton'
 import { useContext } from 'react'
 import { AppContext } from '../Context/ThemeContext'
-import ScrollToTop from '../Utils/SlidingRow'
 import { useState } from 'react'
+import { useEffect } from 'react'
 
 
 const Navbar = () => {
   const {darkTheme}=useContext(AppContext)
   const [scrollTop,setScrollTop]=useState(0)
 
+
+const onScroll=()=>{
+  const winScroll = document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  const scrolled = (winScroll / height) *100;
+  setScrollTop(scrolled)
+}
+useEffect(()=>{
+  window.addEventListener("scroll",onScroll)
+  return ()=>window.removeEventListener("scroll",onScroll)
+})
+let r=Math.round(scrollTop)
+
+useEffect(()=>{
+  document.querySelector(".navbar_line").style.width=`${r}%`
+})
   
-  const scrollToHome = () => {
-    document.querySelector(".navbar_line").style.width="15%"
+
+const scrollToHome = () => {
+    // document.querySelector(".navbar_line").style.width="15%"
     window.scrollTo({
-      top: 0,
+      top: scrollTop,
       behavior: 'smooth',
     })
-  }
+}
   const scrollToAbout = () => {
-    document.querySelector(".navbar_line").style.width="30%"
+    // document.querySelector(".navbar_line").style.width="30%"
     window.scrollTo({
       top: 450,
       behavior: 'smooth',

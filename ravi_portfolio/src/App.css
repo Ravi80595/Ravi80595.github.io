@@ -11,7 +11,7 @@
 }
 .navbar_line{
   height: 5px;
-  background-color: red;
+  background-color: white;
   width: 0;
   transition: 1ms;
 }
