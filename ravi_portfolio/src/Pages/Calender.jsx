@@ -10,6 +10,9 @@ import {AiFillStar} from "react-icons/ai"
 import { useContext } from 'react'
 import { AppContext } from '../Context/ThemeContext'
 import Calander2 from "../Images/Calander2.png"
+import AOS from "aos"
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Calender = () => {
 
@@ -17,7 +20,7 @@ const Calender = () => {
   console.log(darkTheme)
 
   return (
-    <div className={darkTheme?'calender':'calender-dark'}>
+    <div className={darkTheme?'calender':'calender-dark'} data-aos="fade-up">
       <Box paddingBottom="0px" mt="70px">
       <Heading className='statHeading' as='h1' borderBottom='4px solid black'>Calendar & Stats</Heading>
       {/* style={{fontWeight:"bold",marginLeft:'170px'}} */}
@@ -28,26 +31,14 @@ const Calender = () => {
       <img src={Calander2}  className={darkTheme?'calendarImages':"calendarImages-dark"}/>
       </Box>
       <Box className={darkTheme?'statBox':"statBox-dark"}>
-        <img src="https://streak-stats.demolab.com/?user=Ravi80595&theme=highcontrast&hide_border=true&border_radius=10" alt="" />
-        {/* <Flex className={darkTheme?'statBox1':'statBox1-dark'}>
-        <Box className='StatBoxInside'>
-          <h1>303</h1>
-          <Text>Total Contributions</Text>
-          <h6>Jun 14 - Present</h6>
+        <Box className={darkTheme?'statbox1':'statbox1-dark'} >
+        <img src="https://streak-stats.demolab.com/?user=Ravi80595&theme=highcontrast&hide_border=true&border_radius=10" width="100%" alt="" />
         </Box>
-        <div className='verticalline'></div>
-        <Box className='StatBoxInside'>
-          <h1>5</h1>
-          <Text>Current Streak</Text>
-          <h6>Nov 8 - Nov 12</h6>
+        <Box className={darkTheme?'statbox1a':'statbox1a-dark'} >
+        <img src="https://streak-stats.demolab.com/?user=Ravi80595&hide_border=true&border_radius=10" alt="" />
         </Box>
-        <div className='verticalline'></div>
-        <Box className='StatBoxInside'>
-          <h1>11</h1>
-          <Text>Longest Streak</Text>
-          <h6 style={{marginTop:"0px"}} >Jun 27 - Jul 7</h6>
-        </Box>
-        </Flex> */}
+
+       
         <Flex className={darkTheme?'statBox2':"statBox2-dark"}>
           <Box className='StatBox2Inside'>
             <Box className='statList'>

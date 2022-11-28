@@ -24,6 +24,10 @@
     justify-content: space-around;
     margin-top: 50px;
     display: flex;
+
+}
+.statbox1{
+    display: none;
 }
 .statBox1{
     width: 40%;
@@ -81,9 +85,9 @@
     margin-top: 40vh;
     width: 140px;
     position: fixed;
+    z-index: 999999;
     color: white;
 }
-
 .sideBox1{
     width: 110px;
     height: 50px;
@@ -101,8 +105,10 @@
     padding-top: 5px;
 }
 .contact{
-    height: 400px;
-
+    height: auto;
+    background: linear-gradient(180deg, rgba(29,36,38) 16%, rgba(0,0,0,1) 54%, 
+    rgb(25,30,32) 99%);
+    padding-top: 0px;
 }
 .Techstack2{
     display: none;
@@ -113,6 +119,25 @@
 .calendarImages{
     display: none;
 }
+.statbox1a{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+}
+
+
+
+/* ************************ */
+
+@media only screen and (max-width: 640px) {
+
+
+
+
+
+}
+
+
+
 
 /* ***************************** */
 .calender-dark{
@@ -120,6 +145,8 @@
     rgb(25,30,32) 99%);
     margin-top: -70px;
     /* padding-top: -70px; */
+    color: white;
+    padding: 15px;
 }
 .statBox1-dark{
     background-color: black;
@@ -153,17 +180,21 @@
     transform: scale(1.1);
     transition: 3s;
 }
-
+.statbox1a-dark{
+    display: none;
+}
 
 
 
 @media only screen and (max-width: 640px) {
-    .calendarImage{
+.calendarImage{
         width: 145vw;
         margin: 10px;
-    }
+}
 .statBox{
     display: block;
+    width: 80%;
+    margin: auto;
 }
 .statHeading{
     width: 80%;
@@ -200,5 +231,42 @@
     width: 155vw;
 }
 
+
+/* ********** DARK OPTIMIZE ************** */
+.calendarImages-dark{
+    width: 145vw;
+    margin: 10px;
+}
+.calender-dark{
+    width: 147vw;
+    margin-top: -70px;
+}
+.statBox-dark{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.statBox1-dark{
+    width: 100vw;
+    margin: auto;
+    padding: 10px;
+    margin: auto;
+ }
+.statBox2-dark{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+.skills_box-dark{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* width: 135vw; */
+}
+.skillBox-dark{
+    width: 155vw;
+}
+.contact-dark{
+    width: 155vw;
+}
 
 }

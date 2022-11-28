@@ -53,12 +53,12 @@
     font-size: 16px;
     padding: 10px;
     color: white;
+    width: 100px;
     cursor: pointer;
     background-color: blue;
 }
 
-
-
+/* ****************************************** */
 
 
 
@@ -105,6 +105,7 @@
     margin: 20px auto 20px auto;
     border-radius: 20px;
     box-shadow: rgba(175, 175, 175, 0.35) 0px 5px 15px;
+    padding-bottom: 20px;
 }
 .techStackBox{
     border: 2px solid aqua;
@@ -139,7 +140,7 @@
 }
 .skillBox-dark{
     background: linear-gradient(180deg, rgba(29,36,38) 16%, rgba(0,0,0,1) 54%, 
-    rgb(29,36,38) 99%);
+    rgb(29,36,38) 92%);
     margin-top: -70px;
 }
 .liveButton-dark{
@@ -153,4 +154,59 @@
     /* margin: auto; */
     border: 2px solid blue;
     background-color: black;
+}
+
+
+
+
+
+
+/* ******************** */
+
+
+@media only screen and (max-width: 640px) {
+
+.Project_box{
+    width: 130vw;
+    margin: auto;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.Project_box_grid-dark{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 80%;
+        margin: auto;
+}
+.Project_box-dark{
+    width: 130vw;
+    margin: auto;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.Project_Box-dark{
+    width: 155vw;
+}
+.project_desc_box{
+    margin-top: 0px;
+    margin: auto;
+}
+.Project_Box3{
+    margin-left: 120px;
+    width: 100%;
+}
+.project_image{
+    width: 80%;
+    margin: auto;
+    height: 180px;
+  }
+  .Flex_box{
+    flex-direction: column;
+  }
+  .project_image-dark{
+    width: 80%;
+    margin: auto;
+    height: 180px;
+  }
+  
 }

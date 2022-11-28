@@ -3,11 +3,15 @@ import {Box,Flex,Heading} from '@chakra-ui/react'
 import ThemeButton from '../Utils/ThemeButton'
 import { useContext } from 'react'
 import { AppContext } from '../Context/ThemeContext'
+import ScrollToTop from '../Utils/SlidingRow'
+import { useState } from 'react'
 
 
 const Navbar = () => {
   const {darkTheme}=useContext(AppContext)
+  const [scrollTop,setScrollTop]=useState(0)
 
+  
   const scrollToHome = () => {
     document.querySelector(".navbar_line").style.width="15%"
     window.scrollTo({

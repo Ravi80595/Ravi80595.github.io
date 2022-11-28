@@ -16,7 +16,7 @@ const Projects = ({Name,line1,line2,line3,codeUrl,Images,liveUrl,descLine,techst
   return (
     <Box className={darkTheme?"Project_Box3":"Project_Box3-dark"}>
           <Box className={darkTheme?'project_image':'project_image-dark'} border='2px solid black'>
-            <img src={Images} alt="s" width="100%" height="100%" className={darkTheme?"Project_image":"Project_image-dark"} />
+            <img src={Images} alt="s" width="100%" height="150px" className={darkTheme?"Project_image":"Project_image-dark"} />
           </Box>
       <Box gap='auto' textAlign='center' className={darkTheme?'Flex_box':"Flex_box-dark"}>
         <Box width={['xs', 'md', 'lg', '4xl']}>

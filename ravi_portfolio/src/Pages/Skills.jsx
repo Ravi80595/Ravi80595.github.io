@@ -12,14 +12,16 @@ import npmlogo from "../Images/npmlogo.png"
 import { Box,Heading,Text } from '@chakra-ui/react'
 import chakralogo from "../Images/chakralogo.png"
 import { AppContext } from '../Context/ThemeContext'
-
+import AOS from "aos"
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Skills = () => {
     const {darkTheme}=useContext(AppContext)
 
 
   return (
-    <Box className={darkTheme?"skillBox":'skillBox-dark'}>
+    <Box className={darkTheme?"skillBox":'skillBox-dark'} data-aos="fade-up">
         <Box className={darkTheme?"skillBoxName":"skillBoxName-dark"}>
       <Heading ml={{base:"5%",md:"10%",lg:"50%"}} as='h1' width="7%" marginLeft='15%' borderBottom='4px solid black'>Skills</Heading>
       <Text  style={{fontWeight:"bold",marginLeft:'15%'}}>These are the technologies I've worked with</Text>

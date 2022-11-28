@@ -40,7 +40,7 @@ const Projects = () => {
       line2={' In this website user can analyze text very easily with features like real time charcters and word count.'}
       line3={' In this users can also perform action on text like uppercase, lowercase and extra space remover and so many.'}
       techstacks={"Bootstrap,CSS,ReactJS"}
-      descLine={"Bluemercury is an E-commerce website.Here users can add to cart,buy and review products."}
+      descLine={"In this website user can delete extra spaces, make upper case lower case and many more."}
       codeUrl={'https://github.com/Ravi80595/Text-Analyzer'}
       />
       <ProjectBox 
@@ -52,7 +52,20 @@ const Projects = () => {
       line2={' Here user can buy furniture items.User can add item to the cart,buy and review products.'}
       line3={' Website made with react based on one page structure.'}
       techstacks={"CSS,ReactJS,ChakraUI"}
-      descLine={"Bluemercury is an E-commerce website.Here users can add to cart,buy and review products."}
+      descLine={"Overstock is an E-commerce website.Here users can add to cart,buy and review products."}
+      codeUrl={'https://github.com/Ravi80595/energized-secretary-1272/tree/main/overstock'}
+      />
+
+<ProjectBox 
+      Name={"Clofetch"}
+      TechStack={'tech stack here'}
+      Images={Project3}
+      liveUrl={"https://overstock-ravi80595.vercel.app/"}
+      line1={' Clofetch is an E-commerce website.'}
+      line2={' Here user can buy Cloths and sneakers items.User can add item to the cart,buy and review products.'}
+      line3={' Website made with react based on one page structure.'}
+      techstacks={"CSS,ReactJS,ChakraUI"}
+      descLine={"Clofetch is an E-commerce website.Here users can add to cart,buy and review products."}
       codeUrl={'https://github.com/Ravi80595/energized-secretary-1272/tree/main/overstock'}
       />
       </Box>
