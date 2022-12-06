@@ -1,0 +1,83 @@
+.skillBoxName-dark{
+    padding-bottom: 0px;
+    /* margin-top: 70px; */
+    color: white;
+    padding-top: 30px;
+}
+.skills_box-dark div{
+    height: 120px;
+    width: 90%;
+    box-shadow: rgba(255, 252, 252, 0.24) 0px 3px 8px;
+    text-align: center;
+    padding-top: 15px;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 16%, rgba(0,0,0,1) 54%, rgb(0, 0, 0) 99%);
+    border-radius: 10px;
+    color: white;
+} 
+.skills_box-dark{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 20px;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+}
+.skillBoxName{
+    padding-bottom: 0px;
+    margin-top: 70px;
+}
+.skills_box div{
+    height: 120px;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    padding-top: 15px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .skills_box{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    background-image: linear-gradient(to right ,white,#edfefe,white,#edfefe,white);
+    gap: 20px;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .Skills_btn{
+    background-color: white;
+    padding: 9px;
+    font-size: 13px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .skillBox-dark{
+    background: linear-gradient(180deg, rgba(29,36,38) 16%, rgba(0,0,0,1) 54%, 
+    rgb(29,36,38) 92%);
+    margin-top: -5px;
+}
+
+
+
+
+
+@media only screen and (max-width: 640px) {
+    .skills_box{
+        width: 135vw;
+        margin-left: 10%;
+      }
+      /* .skills_box-dark{
+        width: 100vw;
+        margin-left: 10%;
+      } */
+      .skills_box-dark{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        width: 80%;
+    }
+    .skillBox-dark{
+        width: 100vw;
+    }
+
+}

@@ -15,6 +15,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^3.0.0-beta.6",
     "framer-motion": "^7.5.4",
+    "github-calendar": "^2.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-floating-button": "^1.1.1",

@@ -44,9 +44,9 @@
 .Flex_box{
     display: flex;
 }
-.descBox2{
+/* .descBox2{
     display: none;
-}
+} */
 .liveButton{
     margin: 5px;
     border-radius: 6px;
@@ -57,14 +57,6 @@
     cursor: pointer;
     background-color: blue;
 }
-
-/* ****************************************** */
-
-
-
-
-/* **************** CSS AFTER DARK THEME ************* */
-
 
 .Project_Box-dark{
     background: linear-gradient(180deg, rgba(29,36,38) 16%, rgba(0,0,0,1) 54%, 
@@ -115,7 +107,7 @@
     width:70%;
 }
 .TechStackHeading-dark{
-    display: none;
+    /* display: none; */
     margin: 0px;
 }
 .techStackBox-dark{
@@ -135,14 +127,16 @@
     text-align: left;
 }
 .descBox2-dark{
-    width: 80%;
+    width: 85%;
     margin: auto;
+    font-size: 18px;
+    height: 90px;
 }
-.skillBox-dark{
+/* .skillBox-dark{
     background: linear-gradient(180deg, rgba(29,36,38) 16%, rgba(0,0,0,1) 54%, 
     rgb(29,36,38) 92%);
-    margin-top: -70px;
-}
+    margin-top: -5px;
+} */
 .liveButton-dark{
     border-radius: 6px;
     font-size: 16px;
@@ -178,14 +172,14 @@
         width: 80%;
         margin: auto;
 }
-.Project_box-dark{
-    width: 130vw;
+/* .Project_box-dark{
+    width: 100vw;
     margin: auto;
     margin-left: 30px;
     margin-top: 40px;
-}
+} */
 .Project_Box-dark{
-    width: 155vw;
+    width: 100vw;
 }
 .project_desc_box{
     margin-top: 0px;
@@ -204,7 +198,7 @@
     flex-direction: column;
   }
   .project_image-dark{
-    width: 80%;
+    width: 100%;
     margin: auto;
     height: 180px;
   }

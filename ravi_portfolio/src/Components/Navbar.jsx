@@ -1,14 +1,14 @@
+// import styles from "./Nav.module.css"
 import React from 'react'
-import {Box,Flex,Heading} from '@chakra-ui/react'
-import ThemeButton from '../Utils/ThemeButton'
-import { useContext } from 'react'
-import { AppContext } from '../Context/ThemeContext'
+// import '../App.css'
+import "../Utils/Navbar.css"
+import {Box,Flex,Heading,Button,Text} from '@chakra-ui/react'
 import { useState } from 'react'
 import { useEffect } from 'react'
+import MobNav from './MobNav'
 
 
 const Navbar = () => {
-  const {darkTheme}=useContext(AppContext)
   const [scrollTop,setScrollTop]=useState(0)
 
 
@@ -30,14 +30,12 @@ useEffect(()=>{
   
 
 const scrollToHome = () => {
-    // document.querySelector(".navbar_line").style.width="15%"
     window.scrollTo({
-      top: scrollTop,
+      top: 0,
       behavior: 'smooth',
     })
 }
   const scrollToAbout = () => {
-    // document.querySelector(".navbar_line").style.width="30%"
     window.scrollTo({
       top: 450,
       behavior: 'smooth',
@@ -53,7 +51,7 @@ const scrollToHome = () => {
 
   const scrollToSkills = () => {
     window.scrollTo({
-      top: 2450,
+      top: 2050,
       behavior: 'smooth',
     });
   };
@@ -66,42 +64,33 @@ const scrollToHome = () => {
     });
   };
 
+  // const showBar=()=>{
+  //   console.log("Clickedd")
+  //   document.querySelector(".menubar").style.width="450px"
+  // }
+  // className='Navbar_box-dark'
   return (
     <>
-    <Box className={darkTheme?'Navbar_box':"Navbar_box-dark"}>
-      <Box display='flex'>
-         <Flex gap={60}  margin='auto auto auto auto'>
-          <Heading as='h3' className={darkTheme?'Link_btns':'Link_btns-dark'} onClick={scrollToHome}>Home</Heading>
-          <Heading as='h3' className={darkTheme?'Link_btns':'Link_btns-dark'} onClick={scrollToAbout}>About</Heading>
-          <Heading as='h3' className={darkTheme?'Link_btns':'Link_btns-dark'} onClick={scrollToProjects}>Projects</Heading>
-          <Heading as='h3' className={darkTheme?'Link_btns':'Link_btns-dark'} onClick={scrollToSkills}>Skills</Heading>
-          <Heading as='h3' className={darkTheme?'Link_btns':'Link_btns-dark'} onClick={scrollToContact}>Contact</Heading>
+    <Box className='Laptop-view'>
+      <Box display='flex' >
+        <p style={{fontSize:'40px',margin: '0px',marginLeft: '20px',fontFamily: 'cursive'}}>Ravi</p>
+         <Flex gap={60}  margin='auto auto auto auto' >
+          <Heading as='h3' className='Link_btns-dark' onClick={scrollToHome}>Home</Heading>
+          <Heading as='h3' className='Link_btns-dark' onClick={scrollToAbout}>About</Heading>
+          <Heading as='h3' className='Link_btns-dark' onClick={scrollToProjects}>Projects</Heading>
+          <Heading as='h3' className='Link_btns-dark' onClick={scrollToSkills}>Skills</Heading>
+          <Heading as='h3' className='Link_btns-dark' onClick={scrollToContact}>Contact</Heading>
+          <a href="https://drive.google.com/file/d/1VkGzotDBg9Qxjg6y4sVN58YcDNxE0zYV/view" target='blank'>
+            <Heading as='h3' className='Link_btns-dark' color="white">Resume</Heading>
+          </a>
           </Flex>
-          <ThemeButton/>
-        </Box>
-        <div className='navbar_line'>
-          
-        </div>
+        </Box> 
+        <div className='navbar_line'></div>
     </Box>
+        <div className='mobileDiv'>
+            <MobNav />
+        </div>
     </>
-
-
-
-
-
-    
-    // <div style={{borderBottom:"2px solid black"}}>
-    // <div style={{display:"flex",gap:'500px',margin:'15px'}}>
-    //   <div>Logo</div>
-    //   <div style={{display:"flex",justifyContent:'space-evenly',width:'90%'}}>
-    //     <div>Home</div>
-    //     <div>About</div>
-    //     <div>Skills</div>
-    //     <div>Resume</div>
-    //     <div>Contact</div>
-    //   </div>
-    // </div>
-    // </div>
   )
 }
 

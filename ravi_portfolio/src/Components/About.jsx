@@ -1,20 +1,14 @@
 import React from 'react'
 import '../App.css' 
 import {Box,Heading,Text} from '@chakra-ui/react'
-import { useContext } from 'react'
-import { AppContext } from '../Context/ThemeContext'
-import AOS from "aos"
-import 'aos/dist/aos.css';
-AOS.init();
 
 
 const About = () => {
-  const {darkTheme}=useContext(AppContext)
 
   return (
-    <Box className={darkTheme?"About_style":"About_style-dark"} data-aos="flip-up"> 
+    <Box className="About_style-dark"> 
+        <Heading ml={{base:"5%",md:"10%",lg:"50%"}} as='h1' width="13%" marginLeft='10%' borderBottom='4px solid #a1a1a1' mt='0px'>About Me</Heading>
         <Box className='About_box'>
-        <Heading as='h1' width='25%' borderBottom='4px solid black'>About Me</Heading>
         <Box>
         <Text>
         Hello! My name is Ravi Sharma & I enjoy creating things that live on the internet. I'm a passionate Developer, with strong administrative & communication skills, good attention to details & the ability to write efficient code.

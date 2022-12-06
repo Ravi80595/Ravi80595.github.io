@@ -1,25 +1,23 @@
-import { background, Box,Heading,Text } from '@chakra-ui/react'
+import { Box,Heading,Text } from '@chakra-ui/react'
 import React from 'react'
 import "../Utils/Projects.css"
-import { useContext } from 'react'
 import ProjectBox from '../Components/ProjectBox'
-import { AppContext } from '../Context/ThemeContext'
 import Project1 from "../Images/Project1.png"
 import Project2 from "../Images/Project2.png"
 import Project3 from "../Images/Project3.png"
+import Project4 from "../Images/Project4.png"
 
 
 const Projects = () => {
-  const {darkTheme}=useContext(AppContext)
 
   return (
-    <Box className={darkTheme?'Project_Box':"Project_Box-dark"}>
+    <Box className="Project_Box-dark">
       <Box paddingBottom="10px">
-      <Heading ml={{base:"5%",md:"10%",lg:"50%"}} as='h1' width="12%" marginLeft='15%' borderBottom='4px solid black'>Portfolio</Heading>
-      <Text style={{fontWeight:"bold",marginLeft:'15%'}}>Check out some of my work right here</Text>
+      <Heading ml={{base:"5%",md:"10%",lg:"50%"}} as='h1' width="12%" marginLeft='10%' borderBottom='4px solid #a1a1a1'>Portfolio</Heading>
+      <Text style={{fontWeight:"bold",marginLeft:'10%'}}>Check out some of my work right here</Text>
       </Box>
-      <Box className={darkTheme?"Project_box_grid":"Project_box_grid-dark"}>
-      <ProjectBox 
+      <Box className="Project_box_grid-dark">
+       <ProjectBox 
       Images={Project1}
       Name={"BlueMercury"}
       TechStack={'tech stack here'}
@@ -31,7 +29,7 @@ const Projects = () => {
       techstacks={"HTML,CSS,Javascript"}
       codeUrl={'https://github.com/KKShakya/spiffy-table-3415'}
       />
-      <ProjectBox 
+      <ProjectBox
       Name={"Text-Handler"}
       TechStack={'tech stack here'}
       Images={Project2}
@@ -55,19 +53,18 @@ const Projects = () => {
       descLine={"Overstock is an E-commerce website.Here users can add to cart,buy and review products."}
       codeUrl={'https://github.com/Ravi80595/energized-secretary-1272/tree/main/overstock'}
       />
-
-<ProjectBox 
+      <ProjectBox 
       Name={"Clofetch"}
       TechStack={'tech stack here'}
-      Images={Project3}
+      Images={Project4}
       liveUrl={"https://overstock-ravi80595.vercel.app/"}
       line1={' Clofetch is an E-commerce website.'}
       line2={' Here user can buy Cloths and sneakers items.User can add item to the cart,buy and review products.'}
       line3={' Website made with react based on one page structure.'}
-      techstacks={"CSS,ReactJS,ChakraUI"}
+      techstacks={"Redux,ReactJS,ChakraUI"}
       descLine={"Clofetch is an E-commerce website.Here users can add to cart,buy and review products."}
       codeUrl={'https://github.com/Ravi80595/energized-secretary-1272/tree/main/overstock'}
-      />
+      /> 
       </Box>
     </Box>
   )

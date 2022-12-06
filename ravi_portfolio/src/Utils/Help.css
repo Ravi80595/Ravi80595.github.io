@@ -1,85 +1,6 @@
-.calendarImage{
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    margin-top: 5px;
-    /* width: 80%; */
-    margin: auto;
-}
-.calendarImage:hover{
-    transform: scale(1.1);
-    transition: 2s;
-    box-shadow: rgb(0 0 0 / 5%) 0px 1px 2px, rgb(224 17 17 / 8%) 0px 2px 4px, rgba(12, 237, 50, 0.83) 0px 4px 8px, rgba(22, 237, 18, 0.7) 0px 8px 16px, rgb(242 15 15 / 0%) 0px 16px 32px, rgb(255 6 6 / -45%) 0px 32px 64px;
-}
-.calendarImage:hover::after{
-    width: 10px;
-}
-.calendarImage{
-    padding: 1px;
-}
 .statHeading{
     width: 28%;
     margin-left: 10%;
-    /* border-bottom: 4px solid black; */
-}
-.statBox{
-    justify-content: space-around;
-    margin-top: 50px;
-    display: flex;
-
-}
-.statbox1{
-    display: none;
-}
-.statBox1{
-    width: 40%;
-    height: 170px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 10px;
-}
-.statBox1:hover{
-    box-shadow: rgb(0 0 0 / 5%) 0px 1px 2px, rgb(224 17 17 / 8%) 0px 2px 4px, rgba(23, 192, 234, 0.83) 0px 4px 8px, rgba(37, 194, 247, 0.7) 0px 8px 16px, rgb(242 15 15 / 0%) 0px 16px 32px, rgb(255 6 6 / -45%) 0px 32px 64px; 
-    transform: scale(1.1);
-    transition: 3s;
-}
-.statBox2{
-    width: 30%;
-    height: 170px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: white;
-    border-radius: 10px;
-}
-.statBox2:hover{
-    box-shadow: rgb(0 0 0 / 5%) 0px 1px 2px, rgb(224 17 17 / 8%) 0px 2px 4px, rgba(23, 192, 234, 0.83) 0px 4px 8px, rgba(37, 194, 247, 0.7) 0px 8px 16px, rgb(242 15 15 / 0%) 0px 16px 32px, rgb(255 6 6 / -45%) 0px 32px 64px; 
-    transform: scale(1.1);
-    transition: 3s;
-}
-.StatBox2Inside{
-    width: 65%;
-    display: flex;
-    margin-left: 10px;
-    /* border: 2px solid red;    */
-}
-.StatBoxInside{
-    /* border: 2px solid blue; */
-    width: 33%;
-    text-align: center;
-    padding: 5px;
-}
-.verticalline{
-    border-left: 2px solid #00f1ff;
-    height: 140px;
-    margin: auto;
-}
-.statList{
-    font-size: 15px;
-    line-height: 19px;
-    text-align: left;
-    margin-top: 9px;
-}
-.statList2{
-    line-height: 7px;
-    margin-left: -35px;
-    margin-top: 28px;
 }
 .sideBox{
     margin-top: 40vh;
@@ -92,7 +13,7 @@
     width: 110px;
     height: 50px;
     justify-content: space-evenly;
-    background-color: black;
+    background-color: #505050;
     margin-left: -70px;
 }
 .sideBox1:hover{
@@ -106,103 +27,48 @@
 }
 .contact{
     height: auto;
-    background: linear-gradient(180deg, rgba(29,36,38) 16%, rgba(0,0,0,1) 54%, 
+    background: linear-gradient(180deg, rgba(25,30,32) 16%, rgba(0,0,0,1) 54%, 
     rgb(25,30,32) 99%);
-    padding-top: 0px;
+    padding-top: 55px;
+    margin-top: -5px;
 }
-.Techstack2{
-    display: none;
-}
-.calendarImage-dark{
-    display: none;
-}
-.calendarImages{
-    display: none;
-}
-.statbox1a{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 15px;
-}
-
-
-
-/* ************************ */
-
-@media only screen and (max-width: 640px) {
-
-
-
-
-
-}
-
-
-
-
-/* ***************************** */
 .calender-dark{
     background: linear-gradient(180deg, rgba(29,36,38) 16%, rgba(0,0,0,1) 54%, 
     rgb(25,30,32) 99%);
-    margin-top: -70px;
-    /* padding-top: -70px; */
+    padding-top: 30px;
     color: white;
     padding: 15px;
 }
-.statBox1-dark{
+.statbox1-dark{
     background-color: black;
     color: white;
     box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
     width: 40%;
-    height: 170px;
+    margin: auto;
     box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
     border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: rgb(0 0 0 / 5%) 0px 1px 2px, rgb(224 17 17 / 8%) 0px 2px 4px, rgba(23, 192, 234, 0.83) 0px 4px 8px, rgba(37, 194, 247, 0.7) 0px 8px 16px, rgb(242 15 15 / 0%) 0px 16px 32px, rgb(255 6 6 / -45%) 0px 32px 64px;
 }
-.statBox1-dark:hover{
+.statbox1-dark:hover{
     box-shadow: rgb(0 0 0 / 5%) 0px 1px 2px, rgb(224 17 17 / 8%) 0px 2px 4px, rgba(23, 192, 234, 0.83) 0px 4px 8px, rgba(37, 194, 247, 0.7) 0px 8px 16px, rgb(242 15 15 / 0%) 0px 16px 32px, rgb(255 6 6 / -45%) 0px 32px 64px; 
     transform: scale(1.1);
     transition: 3s;
 }
 .statBox-dark{
-    justify-content: space-around;
     margin-top: 50px;
-    display: flex;
 }
-.statBox2-dark{
-    background-color: black;
-    color: white;
-    width: 30%;
-    height: 170px;
-    box-shadow: rgba(254, 254, 254, 0.24) 0px 3px 8px;
-    border-radius: 10px;
+.calanderBox{
+    width: 70%;
+    margin: auto;
+    padding-bottom: 30px;
 }
-.statBox2-dark:hover{
-    box-shadow: rgb(0 0 0 / 5%) 0px 1px 2px, rgb(224 17 17 / 8%) 0px 2px 4px, rgba(23, 192, 234, 0.83) 0px 4px 8px, rgba(37, 194, 247, 0.7) 0px 8px 16px, rgb(242 15 15 / 0%) 0px 16px 32px, rgb(255 6 6 / -45%) 0px 32px 64px; 
-    transform: scale(1.1);
-    transition: 3s;
-}
-.statbox1a-dark{
-    display: none;
-}
-
 
 
 @media only screen and (max-width: 640px) {
-.calendarImage{
-        width: 145vw;
-        margin: 10px;
-}
-.statBox{
-    display: block;
-    width: 80%;
-    margin: auto;
-}
 .statHeading{
     width: 80%;
     margin: auto;
-}
-.calender{
-    width: 155vw;
-    margin-top: -70px;
 }
 .statBox1{
    width: 80%;
@@ -210,16 +76,6 @@
    padding: 10px;
    margin: auto;
 }
-.statBox2{
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
-}
-.skills_box{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
-
 .box{
     display: none;
 }
@@ -228,45 +84,28 @@
     margin-top: 0px;
 }
 .contact{
-    width: 155vw;
+    width: 100vw;
 }
-
-
-/* ********** DARK OPTIMIZE ************** */
 .calendarImages-dark{
-    width: 145vw;
+    width: 85vw;
     margin: 10px;
 }
 .calender-dark{
-    width: 147vw;
-    margin-top: -70px;
+    width: 100;
 }
 .statBox-dark{
     display: block;
     width: 80%;
     margin: auto;
 }
-.statBox1-dark{
-    width: 100vw;
+.statbox1-dark{
+    width: 75%;
     margin: auto;
     padding: 10px;
     margin: auto;
- }
-.statBox2-dark{
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
-}
-.skills_box-dark{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    /* width: 135vw; */
-}
-.skillBox-dark{
-    width: 155vw;
 }
 .contact-dark{
-    width: 155vw;
+    width: 100vw;
 }
 
 }

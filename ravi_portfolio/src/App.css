@@ -48,17 +48,17 @@
   height: 300px;
   margin-top: 50px;
 }
-.About_image{
+/* .About_image{
   height: 300px;
   margin-top: 50px;
   margin-left: 90px;
   padding-top: 20px;
-}
+} */
 .About_box{
   width: 70%;
   margin: auto;
   padding: 20px;
-  margin-top: 0px;
+  margin-top: -5px;
   font-size: 20px;
 }
 .Hello_Style{
@@ -70,13 +70,13 @@
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
 }
-.About_style{
+/* .About_style{
   background-image: linear-gradient(to right ,white,#edfefe,white,#edfefe,white);
   font-family: sans-serif;
   line-height: 5px;
   line-height: 34px;
-}
-.skills_box{
+} */
+/* .skills_box{
   display: grid;
   grid-template-columns: repeat(3,2fr);
   background-image: linear-gradient(to right ,white,#edfefe,white,#edfefe,white);
@@ -84,8 +84,8 @@
   width: 75%;
   margin: auto;
   margin-top: 50px;
-}
-.skills_box div{
+} */
+/* .skills_box div{
   height: 120px;
   width: 90%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -93,11 +93,11 @@
   padding-top: 15px;
   background-color: white;
   border-radius: 10px;
-}
-.skillBoxName{
+} */
+/* .skillBoxName{
   padding-bottom: 0px;
   margin-top: 70px;
-}
+} */
 .box{
   width: 200px;
   height: 200px;
@@ -112,13 +112,13 @@
   transform: scale(0.9)
 }
 
-.Skills_btn{
+/* .Skills_btn{
   background-color: white;
   padding: 9px;
   font-size: 13px;
   border: 1px solid black;
   border-radius: 10px;
-}
+} */
 .Resume_btn{
   padding: 10px;
   border-radius: 20px;
@@ -188,47 +188,12 @@
   padding: 10px;
   border-radius: 10px;
 }
-.lastBox{
-  width: 30%;
-  margin: auto;
-  color: white;
-  margin-top: -20px;
-}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ********************** CSS AFTER DARK THEME *************** */
-
-.App-dark{
+/* .App-dark{
   background: linear-gradient(180deg, rgba(30,53,58) 16%, rgba(18,18,18) 54%,
   rgba(29,36,38) 99%);
-}
+} */
 .About_style-dark{
   background: linear-gradient(180deg, rgba(30,53,58) 16%, rgba(18,18,18) 54%,
    rgba(29,36,38) 99%);
@@ -273,15 +238,15 @@
 .Link_btns-dark:hover::after{
   width: 100%;
 }
-.skills_box-dark{
+/* .skills_box-dark{
   display: grid;
   grid-template-columns: repeat(3,2fr);
   gap: 20px;
   width: 75%;
   margin: auto;
   margin-top: 50px;
-}
-.skills_box-dark div{
+} */
+/* .skills_box-dark div{
   height: 120px;
   width: 90%;
   box-shadow: rgba(255, 252, 252, 0.24) 0px 3px 8px;
@@ -290,12 +255,13 @@
   background: linear-gradient(180deg, rgba(2,0,36,1) 16%, rgba(0,0,0,1) 54%, rgb(0, 0, 0) 99%);
   border-radius: 10px;
   color: white;
-}
-.skillBoxName-dark{
+} */
+/* .skillBoxName-dark{
   padding-bottom: 0px;
-  margin-top: 70px;
-  color: white;
-}
+  /* margin-top: 70px; */
+  /* color: white;
+  padding-top: 30px; */
+/* } */ 
 .box-dark{
   color: white;
   background-color: black;
@@ -312,14 +278,30 @@
 }
 .box2-dark{
   height: 310px;
-  box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  padding-top: 20px;
+  /* box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+  /* padding-top: 20px; */
 }
-
-
-
-
-
+.HeaderArea2{
+  color: white;
+}
+.mainHeading{
+  color: white;
+  font-size: 60px;
+}
+.profileBx1{
+  width: 60%;
+  
+}
+.lastBox{
+  width: 30%;
+  margin: auto;
+  color: white;
+  margin-top: -20px;
+}
+.lastBox2{
+  margin-top: 110px;
+  font-size: 45px;
+}
 
 
 
@@ -339,12 +321,19 @@
 
 
 @media only screen and (max-width: 640px) {
-.About_image{
+/* .About_image{
   display: none;
+} */
+.mainHeading{
+  font-size: 45px;
+}
+.profileBx1{
+  width: 45%;
 }
 .icons{
   margin-top: 10px;
   width: 50%;
+  margin-left: -50px;
 }
 .HeaderArea{  
   gap: 28px;
@@ -352,38 +341,40 @@
 .About_box{
   width: 80%;
 }
-.About_style{
+/* .About_style{
   width: 135vw;
   margin: auto;
-}
+} */
 
-.skills_box{
+/* .skills_box{
   width: 135vw;
   margin-left: 10%;
-}
-
-
-
-
-
-
-
-/* ***********  Dark optimize*********** */
+} */
 .HeaderArea-dark{  
   gap: 0px;
-  width: 145vw;
+  width: 100;
+}
+.HeaderArea2{
+  width: 50%;
 }
 .About_style-dark{
-  width: 155vw;
+  width: 100vw;
   margin: auto;
 }
-.About_box-dark{
+/* .About_box-dark{
   width: 80%;
-}
-.skills_box-dark{
-  width: 135vw;
+} */
+/* .skills_box-dark{
+  width: 100vw;
   margin-left: 10%;
+} */
+.photo_image{
+  height: 200px;
 }
-
+.lastBox2{
+  /* margin-top: 110px; */
+  margin-top: 0px;
+  font-size: 30px;
+}
 
 }

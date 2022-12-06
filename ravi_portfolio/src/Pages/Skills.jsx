@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
 import "../App.css"
+import "../Utils/Skills.css"
 import htmllogo from "../Images/htmllogo.png"
 import javascriptlogo from "../Images/javascriptlogo.png"
 import csslogo from "../Images/csslogo.png"
@@ -11,22 +11,21 @@ import reduxlogo from "../Images/reduxlogo.png"
 import npmlogo from "../Images/npmlogo.png"
 import { Box,Heading,Text } from '@chakra-ui/react'
 import chakralogo from "../Images/chakralogo.png"
-import { AppContext } from '../Context/ThemeContext'
 import AOS from "aos"
 import 'aos/dist/aos.css';
 AOS.init();
 
 const Skills = () => {
-    const {darkTheme}=useContext(AppContext)
+
 
 
   return (
-    <Box className={darkTheme?"skillBox":'skillBox-dark'} data-aos="fade-up">
-        <Box className={darkTheme?"skillBoxName":"skillBoxName-dark"}>
-      <Heading ml={{base:"5%",md:"10%",lg:"50%"}} as='h1' width="7%" marginLeft='15%' borderBottom='4px solid black'>Skills</Heading>
-      <Text  style={{fontWeight:"bold",marginLeft:'15%'}}>These are the technologies I've worked with</Text>
+    <Box className='skillBox-dark'>
+    <Box className="skillBoxName-dark">
+      <Heading ml={{base:"5%",md:"10%",lg:"50%"}} as='h1' width="7%" marginLeft='10%' borderBottom='4px solid #a1a1a1'>Skills</Heading>
+      <Text  style={{fontWeight:"bold",marginLeft:'10%'}}>These are the technologies I've worked with</Text>
       </Box>
-    <div className={darkTheme?'skills_box':"skills_box-dark"}>
+        <div className="skills_box-dark" data-aos="fade-up">
         <div className='npmhover'> 
             <img src={htmllogo} alt="HTML" height='50%'/>
             <Heading marginTop="10px">HTML</Heading>
