@@ -1,4 +1,4 @@
-import "../App.css"
+// import "../App.css"
 import "../Utils/Skills.css"
 import htmllogo from "../Images/htmllogo.png"
 import javascriptlogo from "../Images/javascriptlogo.png"

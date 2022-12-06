@@ -1,9 +1,6 @@
 import { Box,Flex,Heading,Button,Text } from '@chakra-ui/react'
-import '../App.css'
+// import '../App.css'
 import "../Utils/Projects.css"
-import {FaNodeJs,FaHandPointRight} from 'react-icons/fa'
-import {AiFillHtml5} from 'react-icons/ai'
-import {IoLogoCss3} from 'react-icons/io'
 import {BsGithub} from 'react-icons/bs'
 import {VscLinkExternal} from 'react-icons/vsc'
 import AOS from "aos"

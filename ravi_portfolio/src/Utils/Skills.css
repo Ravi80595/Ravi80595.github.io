@@ -1,6 +1,5 @@
 .skillBoxName-dark{
     padding-bottom: 0px;
-    /* margin-top: 70px; */
     color: white;
     padding-top: 30px;
 }
@@ -62,22 +61,18 @@
 
 
 @media only screen and (max-width: 640px) {
-    .skills_box{
-        width: 135vw;
-        margin-left: 10%;
-      }
-      /* .skills_box-dark{
-        width: 100vw;
-        margin-left: 10%;
-      } */
-      .skills_box-dark{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 20px;
-        width: 80%;
-    }
-    .skillBox-dark{
-        width: 100vw;
-    }
+.skills_box{
+    width: 135vw;
+    margin-left: 10%;
+}
+.skills_box-dark{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width: 80%;
+}
+.skillBox-dark{
+    width: 100vw;
+}
 
 }

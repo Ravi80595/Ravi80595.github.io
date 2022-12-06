@@ -1,63 +1,3 @@
-.Project_Box{
-    background-image: linear-gradient(to right ,#edfefe,white,#edfefe,white);
-    margin-top: -20px;
-    padding-top: 70px;
-}
-.Project_Box3{
-    width: 70%;
-    background-color: white;
-    border: 2px solid aqua;
-    margin: 20px auto 20px auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.project_image{
-    width: 310px;
-    height: 200px;
-    margin: 25px;
-}
-.project_image:hover{
-    transform: scale(1.1);
-}
-.techStackBox{
-    border: 2px solid aqua;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    font-size: 40px;
-    margin: 0px 5px 10px 0px;
-    width:70%;
-}
-
-.project_desc_box{
-    margin-top: -250px;
-    width: 60%;
-    margin-left: auto;
-    background-color: white;
-    color: black;
-}
-.descBox{
-    padding: 20px;
-    height: auto;
-    font-size: 20px;
-    text-align: left;
-    margin-top: -20px;
-    margin-left: 8px;
-}
-.Flex_box{
-    display: flex;
-}
-/* .descBox2{
-    display: none;
-} */
-.liveButton{
-    margin: 5px;
-    border-radius: 6px;
-    font-size: 16px;
-    padding: 10px;
-    color: white;
-    width: 100px;
-    cursor: pointer;
-    background-color: blue;
-}
-
 .Project_Box-dark{
     background: linear-gradient(180deg, rgba(29,36,38) 16%, rgba(0,0,0,1) 54%, 
     rgb(29,36,38) 99%);
@@ -99,15 +39,7 @@
     box-shadow: rgba(175, 175, 175, 0.35) 0px 5px 15px;
     padding-bottom: 20px;
 }
-.techStackBox{
-    border: 2px solid aqua;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    font-size: 40px;
-    margin: 0px 5px 10px 0px;
-    width:70%;
-}
 .TechStackHeading-dark{
-    /* display: none; */
     margin: 0px;
 }
 .techStackBox-dark{
@@ -118,25 +50,12 @@
     margin-left: auto;
     color: white;
 }
-.descBox-dark{
-    display: none;
-}
-.descBox-dark{
-    margin: auto;
-    width: 100%;
-    text-align: left;
-}
 .descBox2-dark{
     width: 85%;
     margin: auto;
     font-size: 18px;
     height: 90px;
 }
-/* .skillBox-dark{
-    background: linear-gradient(180deg, rgba(29,36,38) 16%, rgba(0,0,0,1) 54%, 
-    rgb(29,36,38) 92%);
-    margin-top: -5px;
-} */
 .liveButton-dark{
     border-radius: 6px;
     font-size: 16px;
@@ -145,7 +64,6 @@
     cursor: pointer;
     width: 95px;
     margin: 5px;
-    /* margin: auto; */
     border: 2px solid blue;
     background-color: black;
 }
@@ -160,24 +78,12 @@
 
 @media only screen and (max-width: 640px) {
 
-.Project_box{
-    width: 130vw;
-    margin: auto;
-    margin-left: 30px;
-    margin-top: 40px;
-}
 .Project_box_grid-dark{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         width: 80%;
         margin: auto;
 }
-/* .Project_box-dark{
-    width: 100vw;
-    margin: auto;
-    margin-left: 30px;
-    margin-top: 40px;
-} */
 .Project_Box-dark{
     width: 100vw;
 }
@@ -185,22 +91,15 @@
     margin-top: 0px;
     margin: auto;
 }
-.Project_Box3{
-    margin-left: 120px;
-    width: 100%;
-}
 .project_image{
     width: 80%;
     margin: auto;
     height: 180px;
-  }
-  .Flex_box{
-    flex-direction: column;
-  }
-  .project_image-dark{
+}
+.project_image-dark{
     width: 100%;
     margin: auto;
     height: 180px;
-  }
+}
   
 }
