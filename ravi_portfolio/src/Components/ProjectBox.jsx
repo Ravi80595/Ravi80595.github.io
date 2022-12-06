@@ -25,7 +25,7 @@ const Projects = ({Name,codeUrl,Images,liveUrl,descLine,techstacks}) => {
           <Box className="Techstack2-dark">
             <Text> <span color='blue'>Tech Stack: </span> {techstacks}</Text>
           </Box>
-          <Flex justifyContent='space-evenly'>
+          <Flex justifyContent='space-evenly' textDecoration='none'>
             <a href={liveUrl} target='blank'>
             <Button className="liveButton-dark"><VscLinkExternal/> Live</Button>
             </a>

@@ -67,7 +67,10 @@
     border: 2px solid blue;
     background-color: black;
 }
-
+.liveButton-dark:hover{
+    background-color: blue;
+    color: white;
+}
 
 
 

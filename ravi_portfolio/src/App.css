@@ -79,7 +79,7 @@
 }
 .Resume_btn{
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 5px;
   margin-top: 15px;
   color:white;
   background-color: blue;
@@ -227,7 +227,15 @@
   margin-top: 110px;
   font-size: 45px;
 }
-
+.footerLogo{
+  color: white;
+}
+.footerLogo:hover{
+  /* animation: fadeUP 1s; */
+  transform: scale(1.4);
+  transition: 0.1s;
+  /* transition: opacity 1s ease; */
+}
 
 
 

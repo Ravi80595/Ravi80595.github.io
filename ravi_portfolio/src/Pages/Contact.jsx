@@ -29,11 +29,11 @@ const Contact = () => {
         <Text>I can ensure reliablity, low cost fares and most important, with safety and comfort in mind.</Text>
         <Box className='lastBox2'>
         <Flex justifyContent="space-evenly" >
-        <a href="https://instagram.com/ravi.kapro?igshid=YmMyMTA2M2Y=" target='blank' ><BsInstagram color='white'/></a>   
-        <a href="https://twitter.com/Ravi11967071" target='blank'><BsTwitter color='white'/></a> 
-        <a href="https://www.linkedin.com/in/ravi-sharma-399572219/" target='blank'><AiFillLinkedin color='white'/></a> 
-        <a href="https://instagram.com/ravi.kapro?igshid=YmMyMTA2M2Y=" target='blank'> <AiFillFacebook color='white'/></a> 
-        <a href="https://instagram.com/ravi.kapro?igshid=YmMyMTA2M2Y=" target='blank'> <AiOutlineWhatsApp color='white'/></a>
+        <a href="https://instagram.com/ravi.kapro?igshid=YmMyMTA2M2Y=" target='blank' ><BsInstagram className='footerLogo'/></a>   
+        <a href="https://twitter.com/Ravi11967071" target='blank'><BsTwitter className='footerLogo'/></a> 
+        <a href="https://www.linkedin.com/in/ravi-sharma-399572219/" target='blank'><AiFillLinkedin className='footerLogo'/></a> 
+        <a href="https://instagram.com/ravi.kapro?igshid=YmMyMTA2M2Y=" target='blank'> <AiFillFacebook className='footerLogo'/></a> 
+        <a href="https://instagram.com/ravi.kapro?igshid=YmMyMTA2M2Y=" target='blank'> <AiOutlineWhatsApp className='footerLogo'/></a>
         </Flex>
         </Box>
       </Box>

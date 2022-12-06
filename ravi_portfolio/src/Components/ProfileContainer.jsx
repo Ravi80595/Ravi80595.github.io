@@ -4,6 +4,7 @@ import {Box,Heading,Image,Flex,Text,HStack} from "@chakra-ui/react"
 import {FaNodeJs,FaReact} from 'react-icons/fa'
 import {TbBrandJavascript} from 'react-icons/tb'
 import {AiFillHtml5} from "react-icons/ai"
+import {BsGithub} from "react-icons/bs"
 import AOS from "aos"
 import 'aos/dist/aos.css';
 AOS.init();
@@ -23,7 +24,7 @@ const ProfileContainer = () => {
           <Text> <FaReact/></Text>
           <Text> <AiFillHtml5/></Text>
           <Text> <TbBrandJavascript/></Text>
-          <Text> <FaReact/></Text>
+          <Text> <BsGithub/></Text>
         </HStack>
         </Flex>
       
