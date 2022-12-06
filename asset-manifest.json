@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.09496901.css",
-    "main.js": "/static/js/main.339758c0.js",
+    "main.css": "/static/css/main.993e7d85.css",
+    "main.js": "/static/js/main.66217dd6.js",
     "static/js/787.8b11c474.chunk.js": "/static/js/787.8b11c474.chunk.js",
     "static/media/Project3.png": "/static/media/Project3.c2809480a9135dad9f05.png",
     "static/media/Project1.png": "/static/media/Project1.6fbdeba031295fa2ab03.png",
     "static/media/Project4.png": "/static/media/Project4.4704d4ce0906f004bc1e.png",
     "static/media/Project2.png": "/static/media/Project2.e1c1ffd155f025603ed5.png",
     "static/media/reactlogo.png": "/static/media/reactlogo.0cf951a69d8e58f83f9d.png",
+    "static/media/Logo.webp": "/static/media/Logo.eaecf6ead4b414924d3e.webp",
     "static/media/nodelogo.png": "/static/media/nodelogo.952a9ea986dcfa5229ad.png",
     "static/media/githublogo.png": "/static/media/githublogo.3b9e32903aa89111875d.png",
     "static/media/htmllogo.png": "/static/media/htmllogo.2ba4fabc69a89a8f71e6.png",
@@ -15,12 +16,12 @@
     "static/media/csslogo.png": "/static/media/csslogo.69a82c2d9e45c933a9cb.png",
     "static/media/javascriptlogo.png": "/static/media/javascriptlogo.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
-    "main.09496901.css.map": "/static/css/main.09496901.css.map",
-    "main.339758c0.js.map": "/static/js/main.339758c0.js.map",
+    "main.993e7d85.css.map": "/static/css/main.993e7d85.css.map",
+    "main.66217dd6.js.map": "/static/js/main.66217dd6.js.map",
     "787.8b11c474.chunk.js.map": "/static/js/787.8b11c474.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.09496901.css",
-    "static/js/main.339758c0.js"
+    "static/css/main.993e7d85.css",
+    "static/js/main.66217dd6.js"
   ]
 }
