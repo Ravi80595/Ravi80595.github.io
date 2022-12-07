@@ -106,3 +106,14 @@
 }
   
 }
+
+@media only screen and (min-width: 640px) and (max-width:1024px){
+
+.Project_box_grid-dark{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 80%;
+        margin: auto;
+}
+
+}

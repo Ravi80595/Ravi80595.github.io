@@ -29,7 +29,7 @@ const MobNav = () => {
         <DrawerOverlay />
         <DrawerContent>
         {/* <Image w="50px" src={Logo} backgroundColor='black'/> */}
-        <DrawerCloseButton ml='20%' backgroundColor='black' color='white' pt='20px' justifyContent="left"/>
+        <DrawerCloseButton pt={['50px','10px']} mt={['0px',"50px"]}/>
           <DrawerBody className="drawer-box">
             <Flex mt="5px" m='20px' gap="20px" direction="column" >
                 <Text>Home</Text>
@@ -47,7 +47,7 @@ const MobNav = () => {
         </DrawerContent>
       </Drawer>
       <Box>
-        {/* <Text fontSize="24px" fontWeight="bold" color='white'>Ravi Sharma</Text> */}
+        <Text  fontWeight="bold" color='white' pr='20px'>Ravi</Text>
       </Box>
       {/* <Flex gap="10px" mr="10px">
         <IoIosHeartEmpty className={styles.logo} />
