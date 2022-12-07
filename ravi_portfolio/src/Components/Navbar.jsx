@@ -63,12 +63,6 @@ const scrollToHome = () => {
       behavior: 'smooth',
     });
   };
-
-  // const showBar=()=>{
-  //   console.log("Clickedd")
-  //   document.querySelector(".menubar").style.width="450px"
-  // }
-  // className='Navbar_box-dark'
   return (
     <>
     <Box className='Laptop-view'>
@@ -86,7 +80,7 @@ const scrollToHome = () => {
           </Flex>
         </Box> 
         <div className='navbar_line'></div>
-    </Box>
+      </Box>
         <div className='mobileDiv'>
             <MobNav />
         </div>

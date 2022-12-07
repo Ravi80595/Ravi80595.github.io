@@ -281,13 +281,19 @@
 .About_style-dark{
   width: 100vw;
   margin: auto;
+  margin-top: -5px;
 }
 .photo_image{
   height: 200px;
 }
 .lastBox2{
   margin-top: 0px;
-  font-size: 30px;
+  font-size: 25px;
+  /* gap: 5px; */
+}
+.box2a{
+  margin-left: 10px;
+  width: 50%;
 }
 
 }

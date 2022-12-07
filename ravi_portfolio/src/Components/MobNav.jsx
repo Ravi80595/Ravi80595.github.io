@@ -16,21 +16,20 @@ import {
     Flex,
     Box
   } from '@chakra-ui/react'
-import Logo from "../Images/Logo.webp"
 
 const MobNav = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <Flex justifyContent="space-between" alignItems="center" backgroundColor='black'>
-      <Button p="8px" color="white" bg="black" onClick={onOpen} >
+    <Flex justifyContent="space-between" alignItems="center" backgroundColor='black' width='100vw'>
+      <Button p="8px" color="white" bg="black" onClick={onOpen}>
         <HamburgerIcon  w="30px" h="30px" />
       </Button>
-      <Drawer placement="left" onClose={onClose} isOpen={isOpen}  size="full">
+      <Drawer placement="left" onClose={onClose} isOpen={isOpen} size='full'>
         <DrawerOverlay />
         <DrawerContent>
         {/* <Image w="50px" src={Logo} backgroundColor='black'/> */}
-        <DrawerCloseButton pl='90%' backgroundColor='black' color='white' pt='20px'/>
+        <DrawerCloseButton ml='20%' backgroundColor='black' color='white' pt='20px' justifyContent="left"/>
           <DrawerBody className="drawer-box">
             <Flex mt="5px" m='20px' gap="20px" direction="column" >
                 <Text>Home</Text>
@@ -40,10 +39,10 @@ const MobNav = () => {
                 <Text>Contact</Text>
             </Flex>
             {/* <Text mt="15px">MY ACCOUNT</Text> */}
-            <Flex direction="column">
+            {/* <Flex direction="column">
                 {/* <MobLogin name="Sign In" />  */}
                  {/* <MobLogin name="Register" /> */}
-            </Flex>
+            {/* </Flex> */} 
           </DrawerBody>
         </DrawerContent>
       </Drawer>

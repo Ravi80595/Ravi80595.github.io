@@ -28,7 +28,7 @@ const Contact = () => {
         <Heading as="h1" size='4xl'>Get In Touch</Heading>
         <Text>I can ensure reliablity, low cost fares and most important, with safety and comfort in mind.</Text>
         <Box className='lastBox2'>
-        <Flex justifyContent="space-evenly" >
+        <Flex justifyContent="space-evenly" gap='5px'>
         <a href="https://instagram.com/ravi.kapro?igshid=YmMyMTA2M2Y=" target='blank' ><BsInstagram className='footerLogo'/></a>   
         <a href="https://twitter.com/Ravi11967071" target='blank'><BsTwitter className='footerLogo'/></a> 
         <a href="https://www.linkedin.com/in/ravi-sharma-399572219/" target='blank'><AiFillLinkedin className='footerLogo'/></a> 
