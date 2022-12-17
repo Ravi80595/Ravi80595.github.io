@@ -32,8 +32,8 @@ const Contact = () => {
         <a href="https://instagram.com/ravi.kapro?igshid=YmMyMTA2M2Y=" target='blank' ><BsInstagram className='footerLogo'/></a>   
         <a href="https://twitter.com/Ravi11967071" target='blank'><BsTwitter className='footerLogo'/></a> 
         <a href="https://www.linkedin.com/in/ravi-sharma-399572219/" target='blank'><AiFillLinkedin className='footerLogo'/></a> 
-        <a href="https://instagram.com/ravi.kapro?igshid=YmMyMTA2M2Y=" target='blank'> <AiFillFacebook className='footerLogo'/></a> 
-        <a href="https://instagram.com/ravi.kapro?igshid=YmMyMTA2M2Y=" target='blank'> <AiOutlineWhatsApp className='footerLogo'/></a>
+        <a href="https://www.facebook.com/" target='blank'> <AiFillFacebook className='footerLogo'/></a> 
+        <a href="https://api.whatsapp.com/send/?phone=9306454204&text&type=phone_number&app_absent=0" target='blank'> <AiOutlineWhatsApp className='footerLogo'/></a>
         </Flex>
         </Box>
       </Box>
@@ -44,3 +44,5 @@ const Contact = () => {
 }
 
 export default Contact
+
+//https://wa.me/9306454204

@@ -1,6 +1,7 @@
  import React, { useEffect, useState } from 'react';
-import { ArrowUpIcon,ArrowDownIcon } from '@chakra-ui/icons';
+// import { ArrowUpIcon,ArrowDownIcon } from '@chakra-ui/icons';
 import { Box, Button } from '@chakra-ui/react';
+import {IoIosArrowDown,IoIosArrowUp} from 'react-icons/io'
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -45,13 +46,13 @@ export default function ScrollToTop() {
           onClick={scrollToBottom}
           position='fixed'
           bottom='20px'
-          left={['6px', '20px']}
+          left={['6px', '92vw']}
           zIndex={3}
           fontSize={['sm', 'md', 'lg', 'xl']}
           >
           
           <Button className='ArrowStyle'
-            rightIcon={<ArrowDownIcon />}
+            rightIcon={<IoIosArrowDown />}
             variant='solid'>
           </Button>
         </Box>
@@ -61,11 +62,11 @@ export default function ScrollToTop() {
             <Box onClick={scrollToTop}
             position='fixed'
             top='70px'
-            left={['10px', '20px']}
+            left={['10px', '92vw']}
             zIndex={3}>
             <Button className='ArrowStyle'
           size={'sm'}
-          rightIcon={<ArrowUpIcon />}
+          rightIcon={<IoIosArrowUp/>}
           colorScheme='whatsapp'
           variant='solid'>
           </Button>

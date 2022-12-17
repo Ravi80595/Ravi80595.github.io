@@ -114,12 +114,16 @@
 }
 
 .ArrowStyle{
-  font-size: 43px;
-  padding: 0px;
-  border-radius: 15%;
-  background-color:grey;
-  color: black;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color:black;
+  color: white;
+  margin: 0px;
   border: none;
+}
+.ArrowStyle:hover{
+  box-shadow: rgba(44, 7, 228, 0.35) 0px 5px 15px;
 }
 .boxa{
   display: none;
