@@ -5,13 +5,8 @@ import {AiOutlineWhatsApp} from 'react-icons/ai'
 import {BsInstagram} from 'react-icons/bs'
 import {BsTwitter} from 'react-icons/bs'
 import {AiFillLinkedin} from "react-icons/ai"
-import {AiFillFacebook} from 'react-icons/ai'
+import {AiFillFacebook,AiFillMail} from 'react-icons/ai'
 import {AiOutlineCopyright} from 'react-icons/ai'
-// import { useContext } from 'react'
-// import { AppContext } from '../Context/ThemeContext'
-// import AOS from "aos"
-// import 'aos/dist/aos.css';
-// AOS.init();
 
 const Contact = () => {
   // const {darkTheme}=useContext(AppContext)
@@ -29,6 +24,7 @@ const Contact = () => {
         <Text>I can ensure reliablity, low cost fares and most important, with safety and comfort in mind.</Text>
         <Box className='lastBox2'>
         <Flex justifyContent="space-evenly" gap='5px'>
+        <a href="https://mail.google.com/mail/u/3/#inbox" target='blank'><AiFillMail color='white' className='footerLogo' /></a>
         <a href="https://instagram.com/ravi.kapro?igshid=YmMyMTA2M2Y=" target='blank' ><BsInstagram className='footerLogo'/></a>   
         <a href="https://twitter.com/Ravi11967071" target='blank'><BsTwitter className='footerLogo'/></a> 
         <a href="https://www.linkedin.com/in/ravi-sharma-399572219/" target='blank'><AiFillLinkedin className='footerLogo'/></a> 
@@ -38,6 +34,7 @@ const Contact = () => {
         </Box>
       </Box>
       </Flex>
+      <Text textAlign="center" color='white' m='0px' pb='5px'> Contact :- +91 9306454204</Text>
       <Text textAlign="center" color='white' m='0px' pb='5px'>Designed and build by Ravi Sharma,<AiOutlineCopyright/> 2022 All rights reserved </Text>
     </Box>
   )
