@@ -46,7 +46,7 @@ export default function ScrollToTop() {
           onClick={scrollToBottom}
           position='fixed'
           bottom='20px'
-          left={['50vw', "10px", '85vw',"92vw"]}
+          left={['6px', '92vw']}
           zIndex={3}
           fontSize={['sm', 'md', 'lg', 'xl']}
           >
@@ -62,7 +62,7 @@ export default function ScrollToTop() {
             <Box onClick={scrollToTop}
             position='fixed'
             top='70px'
-            left={['10px', '85vw',"92vw"]}
+            left={['10px', '92vw']}
             zIndex={3}>
             <Button className='ArrowStyle'
           size={'sm'}

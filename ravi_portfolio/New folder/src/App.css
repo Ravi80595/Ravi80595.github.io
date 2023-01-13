@@ -271,8 +271,6 @@
   .HeaderArea-dark{  
     gap: 0px;
     width: 100;
-    padding: 0px;
-    padding-top: 80px;
   }
   .HeaderArea2{
     width: 50%;
@@ -283,7 +281,7 @@
     margin-top: -5px;
   }
   .photo_image{
-    height: 185px;
+    height: 200px;
   }
   .lastBox2{
     margin-top: 0px;

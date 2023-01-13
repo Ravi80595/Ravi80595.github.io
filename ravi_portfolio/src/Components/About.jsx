@@ -11,13 +11,13 @@ const About = () => {
         <Box className='About_box' data-aos="fade-up">
         <Box>
         <Text>
-        Hello! My name is Ravi Sharma & I enjoy creating things that live on the internet. I'm a passionate Developer, with strong administrative & communication skills, good attention to details & the ability to write efficient code.
+        Hello! My name is Ravi Sharma & I enjoy creating things that live on the internet. I'm a passionate Developer, with strong administrative & communication skills, good attention to detail & the ability to write efficient code.
         </Text>
         <Text>
-        My field of interest are building new Web Technologies and Products and also in areas related to Deep Learning and Natural Launguage Processing.
+        My field of interest is building new Web Technologies and also in areas related to Deep Learning and Natural Language Processing.
         </Text>
         <Text>
-        I have clear, logical mind with a practical approach to problem-solving and a drive to see things through to completion. I have work experience in multiple project and clone project with team collaboration.
+        I have a clear, logical mind with a practical approach to problem-solving and a drive to see things through to completion. I have work experience in multiple projects and clone projects with team collaboration.
         </Text>
         </Box>
         </Box>

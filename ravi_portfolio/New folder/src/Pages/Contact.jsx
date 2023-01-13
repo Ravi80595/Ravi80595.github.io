@@ -3,7 +3,7 @@ import {Box,Heading,Text,Input,Textarea,Button, Flex} from '@chakra-ui/react'
 import "../App.css"
 import {AiOutlineWhatsApp} from 'react-icons/ai'
 import {BsInstagram} from 'react-icons/bs'
-import {BsTwitter,BsGithub} from 'react-icons/bs'
+import {BsTwitter} from 'react-icons/bs'
 import {AiFillLinkedin} from "react-icons/ai"
 import {AiFillFacebook,AiFillMail} from 'react-icons/ai'
 import {AiOutlineCopyright} from 'react-icons/ai'
@@ -28,13 +28,13 @@ const Contact = () => {
         <a href="https://instagram.com/ravi.kapro?igshid=YmMyMTA2M2Y=" target='blank' ><BsInstagram className='footerLogo'/></a>   
         <a href="https://twitter.com/Ravi11967071" target='blank'><BsTwitter className='footerLogo'/></a> 
         <a href="https://www.linkedin.com/in/ravi-sharma-399572219/" target='blank'><AiFillLinkedin className='footerLogo'/></a> 
-        <a href="https://github.com/Ravi80595" target='blank'> <BsGithub className='footerLogo'/></a> 
+        <a href="https://www.facebook.com/" target='blank'> <AiFillFacebook className='footerLogo'/></a> 
         <a href="https://api.whatsapp.com/send/?phone=9306454204&text&type=phone_number&app_absent=0" target='blank'> <AiOutlineWhatsApp className='footerLogo'/></a>
         </Flex>
         </Box>
       </Box>
       </Flex>
-      <Text textAlign="center" color='white' m='0px' pb='5px' pt={7}> Contact :- +91 9306454204</Text>
+      <Text textAlign="center" color='white' m='0px' pb='5px'> Contact :- +91 9306454204</Text>
       <Text textAlign="center" color='white' m='0px' pb='5px'> Email :- ravi.kaushik.y@gmail.com</Text>
       <Text textAlign="center" color='white' m='0px' pb='5px'>Designed and build by Ravi Sharma,<AiOutlineCopyright/> 2022 All rights reserved </Text>
     </Box>

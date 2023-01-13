@@ -22,11 +22,11 @@ const Calender = () => {
         <img src="https://streak-stats.demolab.com/?user=Ravi80595&theme=highcontrast&hide_border=true&border_radius=10" width='100%' alt="" />
         </Box>
         <Box className='statbox1-dark' data-aos="fade-up">
-        <img src="https://github-stats-alpha.vercel.app/api?username=Ravi80595&cc=000&tc=fff&ic=fff&bc=000" width='100%'/>
+        <img src="https://github-readme-stats.vercel.app/api?username=Ravi80595&theme=highcontrast&show_icons=true&hide_border=true&border_radius=10" width='100%'/>
         </Box>
         </Box>
     </div>
   )
 }
-// https://github-stats-alpha.vercel.app/api?username=Ravi80595
+
 export default Calender
