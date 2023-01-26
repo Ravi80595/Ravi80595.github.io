@@ -4,9 +4,9 @@ Ravi_Portfolio
 Hi 👋, I am Ravi Sharma. 
 </h2>
 <hr>
-My Name is Ravi Sharma. I am  a full stack web developer.
+I am  a full stack web developer.
 
-
+<img src='https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png' />   
 This is the main Page of portfolio.
 
 ![Main](https://user-images.githubusercontent.com/63177572/214854636-f1abb0f1-b625-48a5-8919-222a7348adc2.png)
