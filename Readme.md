@@ -1,6 +1,9 @@
-Portfolio
+Ravi_Portfolio
 
-<h1> Hey Everyone this is my Portfolio</h1>
+<h2 align="center">
+Hi 👋, I am Ravi Sharma. 
+</h2>
+
 My Name is Ravi Sharma. I am  a full stack web developer.
 
 
@@ -16,6 +19,11 @@ This is the my github stats page of portfolio.
 
 ![Screenshot (852)](https://user-images.githubusercontent.com/63177572/214854673-59a6dd27-4391-48b0-bdce-1c99585e2c32.png)
 
-This is the contact section of my portfolio.
+This is the contact section of my portfolio. 📱
 
 ![Screenshot (853)](https://user-images.githubusercontent.com/63177572/214854681-40753c48-48b0-4643-b9c1-2d91633780aa.png)
+
+
+ <h2> ✍️ Random Dev Quote </h2>
+ <img src='https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical'/> 
+</div>
