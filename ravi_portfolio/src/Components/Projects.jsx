@@ -6,7 +6,7 @@ import Project1 from "../Images/Project1.png"
 import Project2 from "../Images/Project2.png"
 import Project3 from "../Images/Project3.png"
 import Project4 from "../Images/Project4.png"
-
+import Project5 from "../Images/Project5.png"
 
 const Projects = () => {
 
@@ -55,6 +55,15 @@ const Projects = () => {
       techstacks={"Redux,ReactJS,ChakraUI"}
       descLine={"Clofetch is an E-commerce website.Here users can add to cart,buy and review products."}
       codeUrl={'https://github.com/Ravi80595/few-insect-4217'}
+      /> 
+      <ProjectBox 
+      Name={"SocialPshcyo"}
+      TechStack={'tech stack here'}
+      Images={Project5}
+      liveUrl={"https://socialpshycho-qszwtszfh-ravi-1219.vercel.app/"}
+      techstacks={"ReactJS,ChakraUI,Nodejs,MongoDB"}
+      descLine={"SocialPshcyo is a social media website. Here your can upload posts see others also like and comment other posts."}
+      codeUrl={'https://github.com/Ravi80595/socialPshycho'}
       /> 
       </Box>
     </Box>
