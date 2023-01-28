@@ -31,20 +31,20 @@ const Projects = () => {
       Name={"EverNote"}
       TechStack={'tech stack here'}
       Images={Project2}
-      liveUrl={"https://frontend-phi-sandy.vercel.app/"}
+      liveUrl={"https://frontend-ravi80595.vercel.app/"}
       techstacks={"ReactJS,MongoDB,Express,ChakraUI"}
       descLine={"This is Bascially a Notes Making and text analyzing website for daily uses."}
       codeUrl={'https://github.com/Ravi80595/EvernotesApp'}
       />
 
       <ProjectBox 
-      Name={"Overstock"}
+      Name={"Pharmbuddy"}
       TechStack={'tech stack here'}
       Images={Project3}
-      liveUrl={"https://overstock-ravi80595.vercel.app/"}
+      liveUrl={"https://pharmbuddy.vercel.app/"}
       techstacks={"ReactJS,ChakraUI,MongoDB,Express"}
-      descLine={"Overstock is an E-commerce website.Here users can add to cart,buy and review products."}
-      codeUrl={'https://github.com/Ravi80595/energized-secretary-1272/tree/main/overstock'}
+      descLine={"Pharmbuddy is an E-commerce website.Here users can add to cart,buy and review products."}
+      codeUrl={'https://github.com/itsDipaks/Farm-Buddy.com'}
       />
 
       <ProjectBox 
