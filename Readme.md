@@ -4,6 +4,7 @@ Ravi_Portfolio
 Hi 👋, I am Ravi Sharma. 
 </h2>
 <hr>
+
 I am  a full stack web developer.
 
 <img src='https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png' />   
