@@ -15,6 +15,7 @@
     justify-content: space-evenly;
     background-color: #505050;
     margin-left: -70px;
+    display: block;
 }
 .sideBox1:hover{
     margin-left: -10px;
@@ -108,5 +109,9 @@
 .contact-dark{
     width: 100vw;
 }
-
+.sideBox1{
+    margin-top: 60vh;
+    display: hidden;
+    background-color: transparent;
+}
 }

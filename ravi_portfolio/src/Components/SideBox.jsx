@@ -6,7 +6,7 @@ import {BsFillPersonLinesFill} from "react-icons/bs"
 
 const SideBox = () => {
   return (
-    <Box className='sideBox' >
+    <Box className='sideBox' display={["none","none","none","block"]}>
     <a href="https://www.linkedin.com/in/ravi-sharma-399572219/" target='blank'>
      <Flex className='sideBox1' borderTopRightRadius='15px'>
         <Text margin='0px' pt='7px' color='white'>Linkedin</Text>

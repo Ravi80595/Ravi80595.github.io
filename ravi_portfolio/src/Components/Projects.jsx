@@ -41,7 +41,7 @@ const Projects = () => {
       Name={"Pharmbuddy"}
       TechStack={'tech stack here'}
       Images={Project3}
-      liveUrl={"https://pharmbuddy.vercel.app/"}
+      liveUrl={"https://farmbuddy.vercel.app/"}
       techstacks={"ReactJS,ChakraUI,MongoDB,Express"}
       descLine={"Pharmbuddy is an E-commerce website.Here users can add to cart,buy and review products."}
       codeUrl={'https://github.com/itsDipaks/Farm-Buddy.com'}
@@ -60,7 +60,7 @@ const Projects = () => {
       Name={"SocialPshcyo"}
       TechStack={'tech stack here'}
       Images={Project5}
-      liveUrl={"https://socialpshycho-qszwtszfh-ravi-1219.vercel.app/"}
+      liveUrl={"https://socialpshycho.vercel.app/"}
       techstacks={"ReactJS,ChakraUI,Nodejs,MongoDB"}
       descLine={"SocialPshcyo is a social media website. Here your can upload posts see others also like and comment other posts."}
       codeUrl={'https://github.com/Ravi80595/socialPshycho'}
