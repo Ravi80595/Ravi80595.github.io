@@ -27,6 +27,7 @@ const Projects = () => {
       codeUrl={'https://github.com/KKShakya/spiffy-table-3415'}
       />
 
+
       <ProjectBox
       Name={"EverNote"}
       TechStack={'tech stack here'}
